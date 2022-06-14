@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { LoadingBtn } from "../../loading/loading";
 
@@ -31,6 +32,18 @@ const LoginForm = () => {
     } else {
       setErrors("Please check your password");
     }
+  };
+
+  /* ----------------------------- logout function ---------------------------- */
+  const logIn = () => {
+    Swal.fire({
+      text: "Access Granted !",
+      icon: "success",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        sessionStorage.clear();
+      }
+    });
   };
 
   /* -------------------------------hidden error onFocus ------------------------------ */
@@ -84,7 +97,7 @@ const LoginForm = () => {
             )}
           </div>
           <div className="flex justify-end mt-6">
-            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-slate-900 focus:outline-none focus:bg-gray-600">{loading ? <LoadingBtn /> : <>Login</>}</button>
+            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-slate-900 focus:outline-none focus:bg-gray-600" onClick={logIn}>{loading ? <LoadingBtn /> : <>Login</>}</button>
           </div>
         </form>
       </section>
