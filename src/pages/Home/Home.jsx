@@ -39,7 +39,7 @@ const Home = () => {
         <div className="button w-full flex justify-center">
           <button
             onClick={showMore}
-            className="bg-indigo-300 mt-2 mb-5 flex items-center px-2 py-2 font-medium tracking-wide capitalize transition-colors duration-200 transform rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80"
+            className="bg-sky-500 mt-2 mb-5 flex items-center px-2 py-2 font-medium tracking-wide capitalize transition-colors duration-200 transform rounded-md hover:bg-sky-500/50 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80"
           >
             <span className="mx-1 text-gray-800">Show more</span>
           </button>

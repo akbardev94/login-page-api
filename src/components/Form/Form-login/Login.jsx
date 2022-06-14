@@ -54,7 +54,7 @@ const LoginForm = () => {
   return (
     <>
       <section className=" wraper w-11/12 md:w-7/12 lg:w-5/12 p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
-        <h2 className="tracking-widest text-2xl text-center font-semibold text-gray-700 capitalize dark:text-white">Login Page</h2>
+        <h2 className="mb-6 tracking-widest text-4xl text-center font-semibold text-gray-700 capitalize dark:text-white">Login Page</h2>
         <form onSubmit={handleSumbit}>
           <div className="mt-2">
             <div>
@@ -96,8 +96,8 @@ const LoginForm = () => {
               <></>
             )}
           </div>
-          <div className="flex justify-end mt-6">
-            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-slate-900 focus:outline-none focus:bg-gray-600" onClick={logIn}>{loading ? <LoadingBtn /> : <>Login</>}</button>
+          <div className="flex justify-center mt-6">
+            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-300 focus:outline-none focus:bg-gray-600" onClick={logIn}>{loading ? <LoadingBtn /> : <>Login</>}</button>
           </div>
         </form>
       </section>
