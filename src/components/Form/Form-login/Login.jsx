@@ -11,7 +11,7 @@ const LoginForm = () => {
   const [loading, setLoading] = useState(false);
 
   /* ----------------------------- handle login function ----------------------------- */
-  const handleSumbit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(password);
     // console.log(email);
@@ -55,7 +55,7 @@ const LoginForm = () => {
     <>
       <section className=" wraper w-11/12 md:w-7/12 lg:w-5/12 p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
         <h2 className="mb-6 tracking-widest text-4xl text-center font-semibold text-gray-700 capitalize dark:text-white">Login Page</h2>
-        <form onSubmit={handleSumbit}>
+        <form onSubmit={handleSubmit}>
           <div className="mt-2">
             <div>
               <label className="text-gray-700 dark:text-gray-200" htmlFor="username">
