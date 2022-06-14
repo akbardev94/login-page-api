@@ -6,7 +6,7 @@ To clone and run this website, you'll need [Git](https://git-scm.com) and [Node.
 
 ```bash
 # Clone this repository
-$ git clone
+$ git clone https://github.com/akbardev94/login-page-api.git
 
 # Go into the repository
 $ cd login-page-api
