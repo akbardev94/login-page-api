@@ -14,8 +14,8 @@ const CardHome = ({ dataUsers }) => {
       {uniqueData?.map((user) => (
         <div key={user.id} className="cursor-pointer w-full md:max-w-xs my-3 bg-white rounded-lg shadow-lg dark:bg-gray-800" onClick={() => toDetail(user.id)}>
           <img className="object-cover rounded-t-md w-full h-56" src={user.avatar} alt="avatar" />
-          <div className="py-5 text-center">
-            <p className="block text-2xl font-bold text-gray-800 dark:text-white">
+          <div className="bg-lime-500 py-5 text-center">
+            <p className="block text-2xl font-bold text-white dark:text-white">
               {user.first_name} {user.last_name}
             </p>
           </div>
