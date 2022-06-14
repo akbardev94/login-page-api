@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="w-full py-5 bg-slate-300 h-14 flex justify-center items-center">
       <div className="wraper ">
         <p className="tracking-wider text-gray-800 text-xl cursor-pointer" onClick={() => navigate("/")}>
-          ~ User Apps ~
+          | User Apps |
         </p>
       </div>
     </div>
