@@ -16,6 +16,9 @@ const Card = ({ detailUser }) => {
           <MdOutlineMail /> {detailUser?.data?.email}
         </p>
       </div>
+      <div className="flex justify-center mt-5"> 
+         <a href="/" className="text-red-500">Go Back</a>
+      </div>
     </div>
   );
 };
